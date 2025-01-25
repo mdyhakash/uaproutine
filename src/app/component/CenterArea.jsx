@@ -58,9 +58,9 @@ export function CenterArea() {
           {selectedCourse && !showRoutine && (
             <div className="bg-white p-4 rounded-lg shadow">
               <h3 className="text-xl font-bold mb-2">{selectedCourse.name}</h3>
-              <div className="flex items-center mb-2">
+              <div className="grid grid-cols-2 items-center mb-2">
                 <Image
-                  src={selectedCourse.teacher.image || "/placeholder.svg"}
+                  src={selectedCourse.teacher.image || "/placeholder.png"}
                   alt={selectedCourse.teacher.name}
                   width={50}
                   height={50}
