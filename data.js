@@ -11,14 +11,14 @@ export default {
       routineImage: "/section_a_routine.png",
       crs: [
         {
-          name: "",
+          name: "Yeamin Islam",
           email: "",
           phone: "",
           image: "/placeholder.png",
           section: "A1",
         },
         {
-          name: "",
+          name: "Zafrin Kaisar Orin",
           email: "",
           phone: "",
           image: "/placeholder.png",
