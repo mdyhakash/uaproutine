@@ -41,17 +41,22 @@ export function RightSidebar() {
         {selectedSection.crs.map((cr, index) => (
           <div key={index} className="flex items-center mb-2">
             <Image
-              src={cr.image || "/placeholder.svg"}
+              src={cr.image || "/placeholder.png"}
               alt={cr.name}
               width={40}
               height={40}
               className="rounded-full mr-4 border border-purple-600 h-20 w-20"
             />
-            <div>
-              <h2 className="text-xl font-semibold mb-2">{cr.name}</h2>
-              <p className=" text-gray-600">{cr.email}</p>
-              <p className=" text-gray-600">{cr.phone}</p>
-              <button className="p-2 bg-green-500 rounded-lg text-white hover:bg-green-600">
+            <div className="flex items-center justify-between w-full p-4 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex-1 min-w-0">
+                <h2 className="text-xl font-semibold text-gray-900 truncate">
+                  {cr.name}
+                </h2>
+                <p className="text-gray-700 text-sm">{cr.email}</p>
+                <p className="text-gray-700 text-sm">{cr.phone}</p>
+              </div>
+
+              <button className="px-5 py-2.5 bg-gradient-to-r from-green-400 to-green-600 text-white font-semibold rounded-lg shadow-md hover:from-green-500 hover:to-green-700 transform hover:scale-105 transition duration-200">
                 {cr.section}
               </button>
             </div>
