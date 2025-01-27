@@ -17,7 +17,7 @@ export function LeftSidebar() {
   };
 
   return (
-    <div className="lg:w-64 bg-gray-100 p-4">
+    <div className="lg:w-64 bg-gray-100 text-black p-4">
       <h2 className="text-xl font-bold mb-4">Sections</h2>
       <div className="space-y-2">
         {data.sections.map((section) => (
