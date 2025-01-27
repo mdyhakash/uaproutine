@@ -42,12 +42,12 @@ export function CenterArea() {
           <h2 className="text-2xl font-bold mb-4">
             Section {selectedSection.name}
           </h2>
-          <div className="grid grid-cols-3 gap-4 mb-4">
+          <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 ">
             {selectedSection.courses.map((course) => (
               <div key={course.code} className="space-y-2">
                 <button
                   onClick={() => handleCourseClick(course)}
-                  className={`w-full rounded font-semibold border px-4 py-2 ${
+                  className={`w-full text-sm rounded font-semibold border px-4 py-2 ${
                     activeCourseCode === course.code
                       ? "bg-blue-500 text-white border-transparent"
                       : "bg-transparent text-blue-700 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-transparent"
@@ -71,18 +71,18 @@ export function CenterArea() {
           {selectedCourse && !showRoutine && (
             <div className="bg-gray-100 p-4 rounded-lg shadow max-w-4xl">
               <h3 className="text-xl font-bold mb-2">{selectedCourse.name}</h3>
-              <div className="grid grid-cols-2 items-center justify-center mb-2">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 items-center justify-center mb-2">
                 <div className="">
                   <Image
                     src={selectedCourse.teacher.image || "/placeholder.png"}
                     alt={selectedCourse.teacher.name}
                     width={300}
                     height={300}
-                    className="border rounded-md mt-4 "
+                    className="border rounded-md mt-4"
                   />
                 </div>
 
-                <div className="bg-white shadow-md rounded-lg p-6 max-w-lg mx-auto">
+                <div className="bg-white shadow-md rounded-lg p-6 w-full lg:max-w-lg mx-auto">
                   <div className="">
                     <p className="font-bold text-2xl text-gray-800 mb-4">
                       {selectedCourse.teacher.name}
@@ -122,7 +122,7 @@ export function CenterArea() {
                     alt={`Routine for Section ${selectedSection.name}`}
                     width={600}
                     height={400}
-                    className="w-full"
+                    className="w-full max-w-full h-auto"
                   />
                 )}
               </div>
