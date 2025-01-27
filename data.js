@@ -60,10 +60,11 @@ export default {
           code: "CSE316",
           name: "Pheripheral & Interfacing Lab",
           teacher: {
-            name: "Zaforrullah Momtaz (ZAM)",
-            email: "zaforullah@uap-bd.edu",
-            phone: "01723722788",
-            image: "/zam.png",
+            name: "Tahmid Taki Rahman (TTR)",
+            email: "r.tahmidtaki@gmail.com",
+            phone: "01950515694",
+            image: "/Tahmid_Taki_Rahman.jpg",
+            shortName: "TTR",
           },
         },
         {
@@ -131,14 +132,14 @@ export default {
         {
           name: "Sajedul Islam Emon",
           email: "@uap-bd.edu",
-          phone: "123-456-0003",
+          phone: "",
           image: "/placeholder.png",
           section: "B1",
         },
         {
           name: "Afrin Sutana Akhi",
           email: "@uap-bd.edu",
-          phone: "123-456-0004",
+          phone: "",
           image: "/placeholder.png",
           section: "B2",
         },
@@ -248,15 +249,15 @@ export default {
       crs: [
         {
           name: "Waisu Jahan",
-          email: "jhon@university.edu",
-          phone: "123-456-0005",
+          email: "",
+          phone: "",
           image: "/placeholder.png",
           section: "C1",
         },
         {
           name: "Sharif Md. Yousuf",
-          email: "jane@university.edu",
-          phone: "123-456-0006",
+          email: "",
+          phone: "",
           image: "/placeholder.png",
           section: "C2",
         },
